@@ -12,7 +12,13 @@
   <!-- A-Frame の VR空間に AR.js を紐づける -->
   <a-scene embedded arjs='sourceType: webcam;'>
       <a-marker preset="hiro">
-        <a-obj-model src="#obj" mtl="#mtl" scale=".01 .01 .01" position="0 1.5 0"></a-obj-model>
+        <a-entity 
+            obj-model="obj: url(https://arjs-cors-proxy.herokuapp.com/https://fuga.github.io/rock/Rock1.obj);
+        mtl: url(https://arjs-cors-proxy.herokuapp.com/https://fuga.github.io/rock/Rock1.mtl)"
+            scale="0.2 0.2 0.2"
+            rotation="-90 0 0"
+        >
+        </a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
