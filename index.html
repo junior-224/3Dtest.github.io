@@ -1,9 +1,10 @@
-
+<!DOCTYPE html>
 <html>
 <head>
 <title>ARテスト</title>
 </head>
 <body style="margin:0px; overflow:hidden;">
+  
   <!-- A-Frame ライブラリの読み込み -->
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <!-- AR.js ライブラリの読み込み -->
@@ -11,6 +12,7 @@
   
   <!-- A-Frame の VR空間に AR.js を紐づける -->
   <a-scene embedded arjs='sourceType: webcam;'>
+    
     <a-assets>
         <a-asset-item id="sample-obj" src="https://arjs-cors-proxy.herokuapp.com/https://github.com/junior-224/3Dtest.github.io/blob/fd826688ef62709392599df17ab88c200a4a966f/4269_3d/Noda_4269.obj"></a-asset-item>
         <a-asset-item id="sample-mtl" src="https://arjs-cors-proxy.herokuapp.com/https://github.com/junior-224/3Dtest.github.io/blob/4c12d1cd0de24a04c0c234f0bc0878638be29579/4269_3d/Noda_4269.mtl"></a-asset-item>
